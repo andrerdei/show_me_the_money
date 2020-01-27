@@ -1,0 +1,107 @@
+/* Quarta Seção - Base */
+
+.quarta-secao{
+    max-width: 100%;
+    margin: auto;
+}
+
+.container-quarta-secao{
+    max-width: 100%;
+    min-height: 25vh;
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@media(orientation: landscape){
+    .container-quarta-secao{
+        max-width: 60%;
+    }
+}
+
+
+/* Mobile Version */
+
+@media(orientation: portrait){
+    .container-quarta-secao .widget-sympla{
+        width: 60%;
+        color: #737373;
+        background: #C4C4C4;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        padding: 3.5em;
+        text-align: center;
+    }
+    
+    .container-quarta-secao h2{
+        width: 100%;
+        color: #737373;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: .3em;
+    }
+    
+    .container-quarta-secao figure{
+        max-width: 30%;
+        text-align: center;
+        margin: 2em;
+        margin-top: .8em;
+    }
+    
+    .container-quarta-secao img{
+        background: #C4C4C4;
+        min-height: 80px;
+        max-width: 150px;
+    }
+}
+
+/* Desktop Version */
+
+@media(orientation: landscape){
+    .container-quarta-secao .widget-sympla{
+        width: 60%;
+        color: #737373;
+        background: #C4C4C4;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 5em;
+        margin-bottom: 5em;
+        padding: 3.5em;
+        text-align: center;
+    }
+    
+    .container-quarta-secao h2{
+        width: 100%;
+        color: #737373;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        padding: .3em;
+    }
+    
+    .container-quarta-secao figure{
+        max-width: 30%;
+        text-align: center;
+        margin: 2em;
+        margin-top: .8em;
+    }
+    
+    .container-quarta-secao img{
+        background: #C4C4C4;
+        min-height: 80px;
+        max-width: 150px;
+    }
+}

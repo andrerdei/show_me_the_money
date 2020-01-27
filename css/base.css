@@ -1,0 +1,52 @@
+/* Básico do Corpo Geral */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100vw;
+    background-color: white;
+    font-family: "arial", "sans-serif";
+    overflow-x: hidden;
+    line-height: 1.2em;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+body:focus{
+    outline: none;
+}
+
+body a{
+    -webkit-tap-highlight-color: transparent;
+    -khtml-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+}
+
+body img{
+    -webkit-tap-highlight-color: transparent;
+    -khtml-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+}
+
+body input{
+    -webkit-tap-highlight-color: transparent;
+    -khtml-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+}
+
+body input:focus{
+    outline: none;
+}
+
+body .main-header{
+    -webkit-tap-highlight-color: transparent;
+    -khtml-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+}

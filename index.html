@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/primeira-secao.css">
+        <link rel="stylesheet" href="css/segunda-secao.css">
+        <link rel="stylesheet" href="css/terceira-secao.css">
+        <link rel="stylesheet" href="css/quarta-secao.css">
+        <link rel="stylesheet" href="css/quinta-secao.css">
+        <link rel="stylesheet" href="css/sexta-secao.css">
+        <link rel="stylesheet" href="css/footer.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        
+        <!-- Script do Include html em JS puro -->    
+        <script>
+            function includeHTML() {
+              var z, i, elmnt, file, xhttp;
+              /* Loop through a collection of all HTML elements: */
+              z = document.getElementsByTagName("*");
+              for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                  /* Make an HTTP request using the attribute value as the file name: */
+                  xhttp = new XMLHttpRequest();
+                  xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                      /* Remove the attribute, and call this function once more: */
+                      elmnt.removeAttribute("w3-include-html");
+                      includeHTML();
+                    }
+                  }
+                  xhttp.open("GET", file, true);
+                  xhttp.send();
+                  /* Exit the function: */
+                  return;
+                }
+              }
+            }
+        </script>   
+    </head>
+    
+    <body>
+        <div w3-include-html="header.html"></div>
+
+        <main>
+            <div id="main-container">
+               
+                <div class="primeira-secao" id="primeira-secao">
+                    <div class="container-primeira-secao">
+                        <h1>B2B | Best 2 Business</h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    </div>
+                </div>
+                
+                <div class="segunda-secao" id="segunda-secao">
+                    <div class="container-segunda-secao">
+                        <h3>30 de janeiro de 2020</h3>
+                        <h4>20:30 até 22:00</h4>
+                        <p class="sobre-evento">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <h2>Palestrantes</h2>
+                        <figure>
+                            <img src="" alt="Imagem do Palestrante">
+                            <figcaption class="figcaption-topo">Nome</figcaption>
+                            <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="" alt="Imagem do Palestrante">
+                            <figcaption class="figcaption-topo">Nome</figcaption>
+                            <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="" alt="Imagem do Palestrante">
+                            <figcaption class="figcaption-topo">Nome</figcaption>
+                            <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
+                        </figure>
+                        <h2>Octadesk</h2>
+                        <p>Rua Alexandre Dumas, 1658 - Santo Amaro, São Paulo</p>
+                    </div>
+                </div>
+                
+                <div class="terceira-secao" id="terceira-secao">
+                    <div class="container-terceira-secao">
+                        <h1>Mapa do Local</h1>
+                    </div>
+                </div>
+                
+                <div class="quarta-secao" id="quarta-secao">
+                    <div class="container-quarta-secao">
+                      
+                       <div class="widget-sympla" id="widget-sympla"><p>Widget de Compra</p></div>
+                    
+                        <h2>Patrocinadores</h2>
+                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
+                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
+                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
+                        <h2>Parceiros</h2>
+                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
+                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
+                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
+                    </div>
+                </div>
+                
+                <div class="quinta-secao" id="quinta-secao">
+                    <div class="container-quinta-secao">
+                        <div class="inside-quinta-secao">
+                            <h2>Best 2 Business</h2>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        </div>
+                        <ul class="redes-sociais">
+                            <li><img src="" alt="Ícone Rede Social"></li>
+                            <li><img src="" alt="Ícone Rede Social"></li>
+                            <li><img src="" alt="Ícone Rede Social"></li>
+                            <li><img src="" alt="Ícone Rede Social"></li>
+                        </ul>
+                    </div>
+                </div>
+                       
+            </div>
+        </main>
+
+        <div w3-include-html="footer.html"></div>
+        
+        <!-- Executando Include html --> 
+        <script>includeHTML();</script>
+    </body>
+</html>

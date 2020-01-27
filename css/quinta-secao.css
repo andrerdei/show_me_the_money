@@ -1,0 +1,132 @@
+/* Quinta Seção - Base */
+
+.quinta-secao{
+    max-width: 100%;
+    background: #C4C4C4;
+    margin: auto;
+}
+
+.container-quinta-secao{
+    max-width: 100%;
+    background: #C4C4C4;
+    min-height: 25vh;
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@media(orientation: landscape){
+    .container-quinta-secao{
+        max-width: 60%;
+    }
+}
+
+
+/* Mobile Version */
+
+@media(orientation: portrait){
+    .container-quinta-secao .inside-quinta-secao{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .container-quinta-secao h2{
+        max-width: 100%;
+        color: #737373;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: left;
+        padding-left: 15%;
+        margin-top: 2em;
+        margin-bottom: .5em;
+    }
+    
+    .container-quinta-secao p{
+        max-width: 100%;
+        color: #737373;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: left;
+        padding-left: 15%;
+        margin-bottom: 3em;
+    }
+    
+    .container-quinta-secao ul{
+        max-width: 40%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:flex-end;
+        padding-left: 15%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+}
+
+/* Desktop Version */
+
+@media(orientation: landscape){
+    .container-quinta-secao .inside-quinta-secao{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .container-quinta-secao h2{
+        max-width: 100%;
+        color: #737373;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: left;
+        padding-left: 15%;
+        margin-top: 2em;
+        margin-bottom: .5em;
+    }
+    
+    .container-quinta-secao p{
+        max-width: 100%;
+        color: #737373;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 15px;
+        text-align: left;
+        padding-left: 15%;
+        margin-bottom: 3em;
+    }
+    
+    .container-quinta-secao ul{
+        max-width: 40%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:flex-end;
+        padding-left: 15%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+}

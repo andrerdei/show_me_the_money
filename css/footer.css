@@ -1,0 +1,53 @@
+/* Footer Básico */
+
+.main-footer{
+    max-width: 100%;
+    margin: auto;
+}
+
+.container-main-footer{
+    min-height: 3vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@media(orientation: landscape){
+    .container-main-footer{
+        max-width: 60%;
+    }
+}
+
+
+/* Mobile Version */
+
+@media(orientation: portrait){
+    .container-main-footer p{
+        font-family: "Roboto";
+        color: #737373;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 10px;
+        text-align: center;
+    }
+}
+
+
+/* Desktop Version */
+
+@media(orientation: landscape){
+    .container-main-footer p{
+        font-family: "Roboto";
+        color: #737373;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 15px;
+        text-align: center;
+        margin-top: .2em
+    }
+}

@@ -1,0 +1,66 @@
+/* Header - Básico */
+
+.main-header{
+    max-width: 100%;
+    background-color: #C4C4C4;
+    margin: auto;
+}
+
+.container-main-header{
+    max-width: 100%;
+    background-color: #C4C4C4;
+    color: #FFFDFD;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    min-height: 2vh;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+@media(orientation: landscape){
+    .container-main-header{
+        max-width: 60%;
+    }
+}
+
+
+/* Mobile Version */
+
+@media(orientation: landscape){
+    .mobile-version ul{
+        display: none;
+    }
+}
+
+@media(orientation: portrait){
+    .mobile-version ul li{
+        display: inline-block;
+        padding: .1em;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+
+/* Desktop Version */
+
+@media(orientation: portrait){
+    .desktop-version ul{
+        display: none;
+    }
+}
+
+@media(orientation: landscape){
+    .desktop-version ul li{
+        display: inline-block;
+        padding: .1em;
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
