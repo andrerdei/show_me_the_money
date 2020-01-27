@@ -20,6 +20,11 @@
     margin: auto;
 }
 
+.container-quinta-secao a{
+    text-decoration: none;
+    color: #737373;
+}
+
 @media(orientation: landscape){
     .container-quinta-secao{
         max-width: 60%;

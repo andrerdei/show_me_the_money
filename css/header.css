@@ -6,6 +6,11 @@
     margin: auto;
 }
 
+.main-header nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
 .container-main-header{
     max-width: 100%;
     background-color: #C4C4C4;
@@ -14,7 +19,6 @@
     font-style: normal;
     font-weight: normal;
     min-height: 2vh;
-    padding: 1em;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -39,11 +43,20 @@
 }
 
 @media(orientation: portrait){
+    .mobile-version ul{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: space-between;
+    }
+    
     .mobile-version ul li{
         display: inline-block;
-        padding: .1em;
         font-size: 15px;
         line-height: 22px;
+        margin-right: 1em;
+        margin-top: 1em;
     }
 }
 
@@ -57,10 +70,23 @@
 }
 
 @media(orientation: landscape){
+    .desktop-version ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(orientation: landscape){
     .desktop-version ul li{
-        display: inline-block;
-        padding: .1em;
-        font-size: 15px;
+        width: 7.5em;
+        margin: 10%;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 2em;
+        font-size: 120%;
         line-height: 22px;
     }
 }

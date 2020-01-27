@@ -15,6 +15,18 @@ body{
     margin: auto;
 }
 
+@media(orientation: portrait){
+    .container-primeira-secao,
+    .container-segunda-secao,
+    .container-terceira-secao,
+    .container-quarta-secao,
+    .container-quinta-secao,
+    .container-main-header,
+    .container-main-footer{
+        transform: scale(.8);
+    }
+}
+
 body:focus{
     outline: none;
 }
