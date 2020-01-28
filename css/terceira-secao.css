@@ -91,22 +91,12 @@
     
 @media(max-width: 1260px){
     .container-terceira-secao h3{
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .container-terceira-secao h2{
         font-size: 24px;
         margin-bottom: 0em;
-    }
-}
-    
-@media(max-width: 350px){
-    .container-terceira-secao h1{
-        font-size: 24px;
-
-    }
-    
-    .container-terceira-secao h2{
-        font-size: 15px;
+        
     }
 }

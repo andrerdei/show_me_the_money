@@ -82,51 +82,44 @@
     
     .container-segunda-secao .palestrantes-div{
         min-width: 100%;
-        background: url("../img/background_palestrantes.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 0 50%;
-        min-height: 75vh;
+        background: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
         margin: auto;
-        margin-top: 5em;
+        margin-top: 1em;
     }
     
     .container-segunda-secao .palestrantes-div h2{
         width: 100%;
-        color: white;
+        color: #294DC2;
         font-family: "Roboto";
         font-weight: bold;
-        font-size: 35px;
+        font-size: 25px;
         line-height: 40px;
         text-align: center;
         padding: .3em;
-        margin-top: 2em;
     }
     
     .container-segunda-secao .palestrantes-div figure{
-        max-width: 30%;
+        max-width: 100%;
         text-align: center;
-        padding: 2em;
+        padding: 1em;
     }
     
     .container-segunda-secao .palestrantes-div img{
-        min-height: 100px;
-        max-width: 100px;
-        border-radius: 100%;
+        width: 100%;
     }
     
     .container-segunda-secao .palestrantes-div .figcaption-topo{
-        color: white;
+        color: #737373;
         font-size: 18px;
     }
     
     .container-segunda-secao .palestrantes-div .figcaption-baixo{
-        color: white;
+        color: #737373;
         font-size: 11px;
     }
 }

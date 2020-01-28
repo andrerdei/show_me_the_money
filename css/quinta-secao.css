@@ -39,7 +39,7 @@
     }
     
     .container-quinta-secao h2{
-        width: 100%;
+        width: 50%;
         color: #294DC2;
         font-family: "Roboto";
         font-style: normal;
@@ -51,15 +51,15 @@
     }
     
     .container-quinta-secao figure{
-        max-width: 30%;
+        max-width: 55%;
         text-align: center;
-        margin: 2em;
+        align-items: center;
         margin-top: .8em;
+        margin-bottom: 1.2em;
     }
     
     .container-quinta-secao img{
-        min-height: 80px;
-        max-width: 150px;
+        width: 100%;
     }
 }
 
@@ -88,14 +88,27 @@
     }
     
     .container-quinta-secao figure{
-        max-width: 30%;
+        max-width: 25%;
         text-align: center;
         margin: 2em;
         margin-top: .8em;
     }
     
     .container-quinta-secao img{
-        min-height: 15vh;
-        max-width: 25vh;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1200px){
+    .container-quinta-secao figure{
+        max-width: 55%;
+        text-align: center;
+        align-items: center;
+        margin-top: .8em;
+        margin-bottom: 1.2em;
+    }
+    
+    .container-quinta-secao img{
+        width: 100%;
     }
 }
