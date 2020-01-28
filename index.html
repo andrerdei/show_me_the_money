@@ -18,124 +18,129 @@
         <link rel="stylesheet" href="css/terceira-secao.css">
         <link rel="stylesheet" href="css/quarta-secao.css">
         <link rel="stylesheet" href="css/quinta-secao.css">
+        <link rel="stylesheet" href="css/sexta-secao.css">
         <link rel="stylesheet" href="css/footer.css">
         
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        
-        <!-- Script do Include html em JS puro -->    
-        <script>
-            function includeHTML() {
-              var z, i, elmnt, file, xhttp;
-              /* Loop through a collection of all HTML elements: */
-              z = document.getElementsByTagName("*");
-              for (i = 0; i < z.length; i++) {
-                elmnt = z[i];
-                /*search for elements with a certain atrribute:*/
-                file = elmnt.getAttribute("w3-include-html");
-                if (file) {
-                  /* Make an HTTP request using the attribute value as the file name: */
-                  xhttp = new XMLHttpRequest();
-                  xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                      /* Remove the attribute, and call this function once more: */
-                      elmnt.removeAttribute("w3-include-html");
-                      includeHTML();
-                    }
-                  }
-                  xhttp.open("GET", file, true);
-                  xhttp.send();
-                  /* Exit the function: */
-                  return;
-                }
-              }
-            }
-        </script>   
     </head>
     
     <body>
-        <div w3-include-html="header.html"></div>
+        <header class="main-header" id="main-header">
+            <div class="container-main-header">
+                <nav class="mobile-version">
+                    <ul>
+                        <a href="#primeira-secao"><li>Sobre</li></a>
+                        <a href="#palestrantes-div"><li>Palestrantes</li></a>
+                        <a href="#terceira-secao"><li>Localização</li></a>
+                        <a href="#quarta-secao"><li>Patrocinadores</li></a>
+                        <a href="#quinta-secao"><li>Contato</li></a>
+                        <a class="ingressos-header" href="#quarta-secao"><li>Ingressos</li></a>
+                    </ul>
+                </nav>
+
+                <nav class="desktop-version">
+                    <ul>
+                        <a href="#primeira-secao"><li>Sobre</li></a>
+                        <a href="#palestrantes-div"><li>Palestrantes</li></a>
+                        <a href="#terceira-secao"><li>Localização</li></a>
+                        <a href="#quarta-secao"><li>Patrocinadores</li></a>
+                        <a href="#quinta-secao"><li>Contato</li></a>
+                        <a class="ingressos-header" href="#quarta-secao"><li>Ingressos</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <main>
-            <div id="main-container">
+            <div class="main-container" id="main-container">
                
                 <div class="primeira-secao" id="primeira-secao">
                     <div class="container-primeira-secao">
-                        <h1>B2B | Best 2 Business</h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                        <h1>B2B | Best For Business</h1>
+                        <h2><i>Talk:</i> Precisamos falar sobre o mercado digital</h2>
                     </div>
                 </div>
                 
                 <div class="segunda-secao" id="segunda-secao">
                     <div class="container-segunda-secao">
-                        <h3>30 de janeiro de 2020</h3>
-                        <h4>20:30 até 22:00</h4>
-                        <p class="sobre-evento">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                        <h2>Palestrantes</h2>
-                        <figure>
-                            <img src="" alt="Imagem do Palestrante">
-                            <figcaption class="figcaption-topo">Nome</figcaption>
-                            <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="" alt="Imagem do Palestrante">
-                            <figcaption class="figcaption-topo">Nome</figcaption>
-                            <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="" alt="Imagem do Palestrante">
-                            <figcaption class="figcaption-topo">Nome</figcaption>
-                            <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
-                        </figure>
-                        <h2>Octadesk</h2>
-                        <p>Rua Alexandre Dumas, 1658 - Santo Amaro, São Paulo</p>
+                        <h2>30 de janeiro de 2020</h2>
+                        <h3>20:30 até 22:00</h3>
+                        <p class="sobre-evento">Não é segredo pra ninguém que as formas de consumo estão mudando e as pessoas estão adotando novos estilos de vida, é necessário renovar-se e reinventar as formas de venda e atração. O dia do consumidor está se aproximando e esse evento foi feito para ajudar você e a sua empresa a se preparar!</p>
+                        <p>Convidamos 3 palestrantes para responder a pergunta:</p>
+                        <p class="paragrafo-diferenciado-1">Qual o futuro do mercado e os caminhos do mundo digital?</p>
+                        <p class="paragrafo-diferenciado-2">O que você verá no evento?</p>
+                        <p>Principais desafios para geração de valor no século 21 <br> Se você é marketeiro, como ser relevante nas suas campanhas? <br> Como trabalhar com marketing conversacional para impulsar seu negócio?</p>
+                        <div class="palestrantes-div" id="palestrantes-div">
+                            <h2 id="palestrantes-anchor">Palestrantes</h2>
+                            <figure>
+                                <img src="img/background_primeira_secao.jpg" alt="Imagem do Palestrante">
+                                <figcaption class="figcaption-topo">Nome</figcaption>
+                                <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/background_primeira_secao.jpg" alt="Imagem do Palestrante">
+                                <figcaption class="figcaption-topo">Nome</figcaption>
+                                <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="img/background_primeira_secao.jpg" alt="Imagem do Palestrante">
+                                <figcaption class="figcaption-topo">Nome</figcaption>
+                                <figcaption class="figcaption-baixo">Cargo, Empresa</figcaption>
+                            </figure>
+                        </div>  
                     </div>
                 </div>
                 
                 <div class="terceira-secao" id="terceira-secao">
                     <div class="container-terceira-secao">
-                        <h1><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.258311101459!2d-46.709058885695434!3d-23.630918570048234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce510c220009ef%3A0x9d3b8f93dbe7c0!2sRua%20Alexandre%20Dumas%2C%201658%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004717-004!5e0!3m2!1spt-BR!2sbr!4v1580177161678!5m2!1spt-BR!2sbr" width="600" height="301" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        <h2>Octadesk</h2>
+                        <h3>Rua Alexandre Dumas, 1658 - Santo Amaro, São Paulo</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.258311101459!2d-46.709058885695434!3d-23.630918570048234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce510c220009ef%3A0x9d3b8f93dbe7c0!2sRua%20Alexandre%20Dumas%2C%201658%20-%20Santo%20Amaro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004717-004!5e0!3m2!1spt-BR!2sbr!4v1580177161678!5m2!1spt-BR!2sbr" width="1200" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
                 
                 <div class="quarta-secao" id="quarta-secao">
                     <div class="container-quarta-secao">
-                      
-                       <div class="widget-sympla" id="widget-sympla"><div id="sympla-widget-773261" height="auto"></div> <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/773261"></script></div>
-                    
-                        <h2>Patrocinadores</h2>
-                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
-                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
-                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
-                        <h2>Parceiros</h2>
-                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
-                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
-                        <figure><img src="" alt="Imagem dos Patrocinadores"></figure>
-                    </div>
+                       <div class="widget-sympla" id="widget-sympla">
+                           <div class="inner-sympla" id="sympla-widget-773261" height="auto"></div> <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/773261"></script>
+                       </div>
+                    </div>  
                 </div>
                 
                 <div class="quinta-secao" id="quinta-secao">
                     <div class="container-quinta-secao">
-                        <div class="inside-quinta-secao">
-                            <h2>Best 2 Business</h2>
-                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                        <h2>Patrocinadores</h2>
+                        <figure><img src="img/background_quarta_secao.jpg" alt="Imagem dos Patrocinadores"></figure>
+                        <figure><img src="img/background_quarta_secao.jpg" alt="Imagem dos Patrocinadores"></figure>
+                        <figure><img src="img/background_quarta_secao.jpg" alt="Imagem dos Patrocinadores"></figure>
+                        <h2>Parceiros</h2>
+                        <figure><img src="img/background_quarta_secao.jpg" alt="Imagem dos Patrocinadores"></figure>
+                        <figure><img src="img/background_quarta_secao.jpg" alt="Imagem dos Patrocinadores"></figure>
+                        <figure><img src="img/background_quarta_secao.jpg" alt="Imagem dos Patrocinadores"></figure>
+                    </div>   
+                </div>
+                
+                <div class="sexta-secao" id="sexta-secao">
+                    <div class="container-sexta-secao">
+                        <div class="inside-sexta-secao">
+                            <h2>Best for Business</h2>
+                            <p>Buscamos inspirar e conectar pessoas em uma comunidade transformadora e que busca trazer mais valor para as pessoas de forma inovadora.</p>
                         </div>
                         <ul class="redes-sociais">
-                            <a href=""><li><img src="" alt="Ícone Rede Social"></li></a>
-                            <a href=""><li><img src="" alt="Ícone Rede Social"></li></a>
-                            <a href=""><li><img src="" alt="Ícone Rede Social"></li></a>
-                            <a href=""><li><img src="" alt="Ícone Rede Social"></li></a>
+                            <a href=""><li><img src="img/facebook_icon.png" alt="Ícone Rede Social"></li></a>
+                            <a href=""><li><img src="img/facebook_icon.png" alt="Ícone Rede Social"></li></a>
+                            <a href=""><li><img src="img/facebook_icon.png" alt="Ícone Rede Social"></li></a>   
                         </ul>
                     </div>
                 </div>
-                       
+    
             </div>
         </main>
 
-        <div w3-include-html="footer.html"></div>
-        
-        <!-- Executando Include html --> 
-        <script>includeHTML();</script>
+        <footer class ="main-footer" id="main-footer">
+            <div class="container-main-footer">
+                <p>Best for Business - Todos os direitos reservados</p>
+            </div>
+        </footer>
     </body>
 </html>

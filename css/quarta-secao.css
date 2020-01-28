@@ -7,7 +7,11 @@
 
 .container-quarta-secao{
     max-width: 100%;
-    min-height: 25vh;
+    background: url("../img/background_quarta_secao.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 75vh;
+    background-color: black;
     padding: 1.5em;
     display: flex;
     flex-wrap: wrap;
@@ -28,40 +32,15 @@
 
 @media(orientation: portrait){
     .container-quarta-secao .widget-sympla{
-        width: 60%;
-        color: #737373;
-        background: #C4C4C4;
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 5em;
+        max-width: 100%;
+        margin-top: 10em;
         margin-bottom: 5em;
-        padding: 3.5em;
-        text-align: center;
+        padding-top: 5em;
+        padding-bottom: 5em;
     }
     
-    .container-quarta-secao h2{
-        width: 100%;
-        color: #737373;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 20px;
-        text-align: center;
-        padding: .3em;
-    }
-    
-    .container-quarta-secao figure{
-        max-width: 30%;
-        text-align: center;
-        margin: 2em;
-        margin-top: .8em;
-    }
-    
-    .container-quarta-secao img{
-        background: #C4C4C4;
-        min-height: 80px;
-        max-width: 150px;
+    .container-quarta-secao .inner-sympla{
+        transform: scale(1.3);
     }
 }
 
@@ -69,39 +48,14 @@
 
 @media(orientation: landscape){
     .container-quarta-secao .widget-sympla{
-        width: 60%;
-        color: #737373;
-        background: #C4C4C4;
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 5em;
+        max-width: 100%;
+        margin-top: 1em;
         margin-bottom: 5em;
-        padding: 3.5em;
-        text-align: center;
+        padding-top: 5em;
+        padding-bottom: 5em;
     }
     
-    .container-quarta-secao h2{
-        width: 100%;
-        color: #737373;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 20px;
-        text-align: center;
-        padding: .3em;
-    }
-    
-    .container-quarta-secao figure{
-        max-width: 30%;
-        text-align: center;
-        margin: 2em;
-        margin-top: .8em;
-    }
-    
-    .container-quarta-secao img{
-        background: #C4C4C4;
-        min-height: 80px;
-        max-width: 150px;
+    .container-quarta-secao .inner-sympla{
+        transform: scale(1.4);
     }
 }

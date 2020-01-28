@@ -17,7 +17,7 @@
 
 @media(orientation: landscape){
     .container-main-footer{
-        max-width: 60%;
+        max-width: 100%;
     }
 }
 

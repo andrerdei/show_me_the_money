@@ -2,13 +2,11 @@
 
 .quinta-secao{
     max-width: 100%;
-    background: #C4C4C4;
     margin: auto;
 }
 
 .container-quinta-secao{
     max-width: 100%;
-    background: #C4C4C4;
     min-height: 25vh;
     padding: 1.5em;
     display: flex;
@@ -18,11 +16,7 @@
     align-items: flex-start;
     box-sizing: border-box;
     margin: auto;
-}
-
-.container-quinta-secao a{
-    text-decoration: none;
-    color: #737373;
+    margin-top: 2em;
 }
 
 @media(orientation: landscape){
@@ -35,103 +29,73 @@
 /* Mobile Version */
 
 @media(orientation: portrait){
-    .container-quinta-secao .inside-quinta-secao{
-        width: 40%;
+    .container-quinta-secao{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     
     .container-quinta-secao h2{
-        max-width: 100%;
-        color: #737373;
+        width: 100%;
+        color: #294DC2;
         font-family: "Roboto";
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
         line-height: 20px;
-        text-align: left;
-        padding-left: 15%;
-        margin-top: 2em;
-        margin-bottom: .5em;
+        text-align: center;
+        padding: .3em;
     }
     
-    .container-quinta-secao p{
-        max-width: 100%;
-        color: #737373;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 15px;
-        text-align: left;
-        padding-left: 15%;
-        margin-bottom: 3em;
+    .container-quinta-secao figure{
+        max-width: 30%;
+        text-align: center;
+        margin: 2em;
+        margin-top: .8em;
     }
     
-    .container-quinta-secao ul{
-        max-width: 40%;
-        font-size: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content:flex-end;
-        padding-left: 15%;
-        margin-top: 3em;
-        margin-bottom: 3em;
+    .container-quinta-secao img{
+        min-height: 80px;
+        max-width: 150px;
     }
 }
 
 /* Desktop Version */
 
 @media(orientation: landscape){
-    .container-quinta-secao .inside-quinta-secao{
-        width: 40%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
-    .container-quinta-secao h2{
-        max-width: 100%;
-        color: #737373;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 20px;
-        text-align: left;
-        padding-left: 15%;
-        margin-top: 2em;
-        margin-bottom: .5em;
-    }
-    
-    .container-quinta-secao p{
-        max-width: 100%;
-        color: #737373;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 15px;
-        text-align: left;
-        padding-left: 15%;
-        margin-bottom: 3em;
-    }
-    
-    .container-quinta-secao ul{
-        max-width: 40%;
-        font-size: 20px;
+    .container-quinta-secao{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content:flex-end;
-        padding-left: 15%;
-        margin-top: 3em;
-        margin-bottom: 3em;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-quinta-secao h2{
+        width: 100%;
+        color: #294DC2;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        padding: .3em;
+    }
+    
+    .container-quinta-secao figure{
+        max-width: 30%;
+        text-align: center;
+        margin: 2em;
+        margin-top: .8em;
+    }
+    
+    .container-quinta-secao img{
+        min-height: 15vh;
+        max-width: 25vh;
     }
 }

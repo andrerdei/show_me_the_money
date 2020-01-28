@@ -2,8 +2,10 @@
 
 .main-header{
     max-width: 100%;
-    background-color: #C4C4C4;
-    margin: auto;
+    min-height: 15vh;
+    background-color: midnightblue;
+    box-shadow: 1px 1px 2px 2px midnightblue;
+    z-index: 10;
 }
 
 .main-header nav ul a{
@@ -13,7 +15,6 @@
 
 .container-main-header{
     max-width: 100%;
-    background-color: #C4C4C4;
     color: #FFFDFD;
     font-family: "Roboto";
     font-style: normal;
@@ -29,7 +30,7 @@
 
 @media(orientation: landscape){
     .container-main-header{
-        max-width: 60%;
+        max-width: 80%;
     }
 }
 
@@ -49,14 +50,18 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: space-between;
+        margin-top: 2.5em;
     }
     
     .mobile-version ul li{
         display: inline-block;
         font-size: 15px;
         line-height: 22px;
-        margin-right: 1em;
-        margin-top: 1em;
+        margin: 1em;
+    }
+    
+    .mobile-version .ingressos-header{
+        border: 3px solid white;
     }
 }
 
@@ -71,22 +76,39 @@
 
 @media(orientation: landscape){
     .desktop-version ul{
+        max-width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin-top: 1.5em;
     }
-}
-
-@media(orientation: landscape){
+    
     .desktop-version ul li{
-        width: 7.5em;
         margin: 10%;
-        margin-left: 1em;
-        margin-right: 1em;
-        margin-bottom: 2em;
+        margin: 2em;
         font-size: 120%;
         line-height: 22px;
+    }
+    
+    .desktop-version .ingressos-header{
+        border: 3px solid white;
+    }
+}
+    
+
+/* Other Rules */
+    
+@media(max-width: 1260px){
+    .desktop-version ul li{
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+    
+@media(max-width: 600px){
+    .mobile-version ul li{
+        margin-top: 0em;
     }
 }

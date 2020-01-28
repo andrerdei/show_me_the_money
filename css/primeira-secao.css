@@ -2,13 +2,16 @@
 
 .primeira-secao{
     max-width: 100%;
-    background: #C4C4C4;
+    min-height: 80vh;
+    background: url("../img/background_primeira_secao.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 65%;
+    background-size: cover;
     margin: auto;
 }
 
 .container-primeira-secao{
     max-width: 100%;
-    background-color: #C4C4C4;
     font-family: "Roboto";
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +47,7 @@
     
     .container-primeira-secao h2{
         width: 100%;
-        color: #737373;
+        color: white;
         font-family: "Roboto";
         font-style: normal;
         font-weight: normal;
@@ -75,7 +78,7 @@
     
     .container-primeira-secao h2{
         width: 100%;
-        color: #737373;
+        color: white;
         font-family: "Roboto";
         font-style: normal;
         font-weight: normal;
@@ -84,5 +87,48 @@
         line-height: 1em;
         padding-right: 1.2em;
         padding-left: 2em;
+    }
+}
+
+
+/* Other Rules */
+    
+@media(max-width: 1260px){
+    .primeira-secao{
+        max-width: 100%;
+        min-height: 40vh;
+        background-size: cover;
+        margin: auto;
+    }
+    
+    .container-primeira-secao h1{
+        width: 100%;
+        color: #FFFDFD;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: .2em;
+    }
+    
+    .container-primeira-secao h2{
+        width: 100%;
+        color: white;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        margin-bottom: 2em;
+    }
+}
+    
+@media(max-width: 350px){
+    .container-primeira-secao h1{
+        font-size: 24px;
+
+    }
+    
+    .container-primeira-secao h2{
+        font-size: 15px;
     }
 }
