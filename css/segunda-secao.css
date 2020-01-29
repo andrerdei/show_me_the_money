@@ -40,7 +40,7 @@
         margin-top: .5em;
     }
     
-    .container-segunda-secao h3{
+    .container-segunda-secao h3, h2{
         width: 100%;
         color: #294DC2;
         font-family: "Roboto";
@@ -114,8 +114,9 @@
     }
     
     .container-segunda-secao .palestrantes-div .figcaption-topo{
-        color: #737373;
+        color: #294DC2;
         font-size: 18px;
+        font-weight: bold;
     }
     
     .container-segunda-secao .palestrantes-div .figcaption-baixo{
@@ -184,11 +185,10 @@
     
     .container-segunda-secao .palestrantes-div{
         min-width: 100%;
-        background: url("../img/background_palestrantes.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 0 50%;
-        min-height: 80vh;
+        min-height: 85vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -196,11 +196,12 @@
         box-sizing: border-box;
         margin: auto;
         margin-top: 5vh;
+
     }
     
     .container-segunda-secao .palestrantes-div h2{
         width: 100%;
-        color: white;
+        color: #294DC2;
         font-family: "Roboto";
         font-weight: bold;
         font-size: 35px;
@@ -223,12 +224,13 @@
     }
     
     .container-segunda-secao .palestrantes-div .figcaption-topo{
-        color: white;
+        color: #294DC2;
         font-size: 18px;
+        font-weight: bold;
     }
     
     .container-segunda-secao .palestrantes-div .figcaption-baixo{
-        color: white;
+        color: #737373;
         font-size: 11px;
     }
 }
@@ -237,8 +239,8 @@
 
 @media(max-width: 1400px){     
     .container-segunda-secao .palestrantes-div img{
-        min-height: 100px;
-        max-width: 100px;
+        min-height: 150px;
+        max-width: 150px;
         border-radius: 100%;
     }
 }
