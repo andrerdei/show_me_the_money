@@ -7,7 +7,7 @@
 
 .container-quinta-secao{
     max-width: 100%;
-    min-height: 25vh;
+    min-height: 40vh;
     padding: 1.5em;
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +16,7 @@
     align-items: flex-start;
     box-sizing: border-box;
     margin: auto;
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 @media(orientation: landscape){

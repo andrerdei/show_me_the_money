@@ -9,7 +9,7 @@
     max-width: 100%;
     background: url("../img/background_quarta_secao.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     min-height: 75vh;
     padding: 1.5em;
     display: flex;
@@ -60,6 +60,6 @@
     }
     
     .container-quarta-secao .inner-sympla{
-        transform: scale(1.4);
+        width: 100em;
     }
 }

@@ -9,7 +9,7 @@
     max-width: 100%;
     background: url("../img/background_sexta_secao.jpg");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     min-height: 65vh;
     padding: 1.5em;
     display: flex;
@@ -35,7 +35,10 @@
 
 /* Mobile Version */
 
-@media(orientation: portrait){
+@media(orientation: portrait){  
+    .container-sexta-secao{
+        min-height: 25vh;
+    }
     .container-sexta-secao .inside-sexta-secao{
         width: 40%;
         display: flex;
@@ -55,7 +58,7 @@
         line-height: 20px;
         text-align: left;
         padding-left: 15%;
-        margin-top: 15em;
+        margin-top: 0em;
         margin-bottom: .5em;
     }
     
@@ -78,13 +81,17 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content:flex-end;
-        padding-left: 15%;
-        margin-top: 18em;
+        padding-left: 20%;
+        margin-top: 1em;
         margin-bottom: 3em;
     }
     
     .container-sexta-secao ul li{
         padding: 1em;
+    }
+    
+    .container-sexta-secao ul li img{
+        width: 80%;
     }
 }
 
@@ -92,7 +99,7 @@
 
 @media(orientation: landscape){
     .container-sexta-secao .inside-sexta-secao{
-        width: 40%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -101,40 +108,40 @@
     }
     
     .container-sexta-secao h2{
-        max-width: 100%;
-        color: white;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 20px;
-        text-align: left;
-        padding-left: 25%;
-        margin-top: 15em;
-        margin-bottom: .5em;
-    }
-    
-    .container-sexta-secao p{
         max-width: 50%;
         color: white;
         font-family: "Roboto";
         font-style: normal;
-        font-size: 14px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 32px;
+        text-align: center;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    .container-sexta-secao p{
+        max-width: 80%;
+        color: white;
+        font-family: "Roboto";
+        font-style: normal;
+        font-size: 16px;
         line-height: 25px;
-        text-align: left;
-        padding-left: 25%;
-        margin-bottom: 3em;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 4em;
     }
     
     .container-sexta-secao ul{
-        max-width: 40%;
+        max-width: 100%;
         font-size: 20px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content:flex-end;
-        padding-left: 15%;
-        margin-top: 20em;
+        margin: auto;
+        margin-top: -9em;
         margin-bottom: 3em;
     }
     
