@@ -1,0 +1,210 @@
+/* Sexta Seção - Base */
+
+.sexta-secao{
+    max-width: 100%;
+    background-image: url(../img/sexta_secao/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    border-top: 5px solid black;
+}
+
+.container-sexta-secao{
+    max-width: 100%;
+    min-height: 50vh;
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.container-sexta-secao a{
+    text-decoration: none;
+    color: #737373;
+}
+
+@media(orientation: landscape){
+    .container-sexta-secao{
+        max-width: 60%;
+    }
+}
+
+
+/* Mobile Version */
+
+@media(orientation: portrait){  
+    .container-sexta-secao .inside-sexta-secao{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .container-sexta-secao h2{
+        max-width: 100%;
+        color: white;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        text-align: center;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        margin-left: 0em;
+    }
+    
+    .container-sexta-secao .titulo-rede{
+        max-width: 100%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0em;
+        margin-bottom: 1em;
+    }
+    
+    .container-sexta-secao .titulo-rede img{
+        max-width: 35%;
+        margin-top: 0em;
+        margin-left: 1.5em;
+    }
+    
+    .container-sexta-secao p{
+        max-width: 50%;
+        color: white;
+        font-family: "Roboto";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 25px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 4em;
+    }
+}
+
+/* Desktop Version */
+
+@media(orientation: landscape){
+    .container-sexta-secao .inside-sexta-secao{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .container-sexta-secao h2{
+        max-width: 100%;
+        color: white;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 32px;
+        text-align: center;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+    }
+    
+    .container-sexta-secao .titulo-rede{
+        max-width: 100%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        margin-top: 2.5em;
+        margin-bottom: 1em;
+    }
+    
+    .container-sexta-secao .titulo-rede img{
+        max-width: 35%;
+        margin-top: 3.7em;
+        margin-left: 1em;
+    }
+    
+    .container-sexta-secao p{
+        max-width: 50%;
+        color: white;
+        font-family: "Roboto";
+        font-style: normal;
+        font-size: 16px;
+        line-height: 25px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 4em;
+    }
+}
+
+
+/* Other Rules */
+
+@media(max-width: 1300px){     
+    .container-sexta-secao p{
+        max-width: 65%;
+    }
+}
+
+@media(max-width: 350px){     
+    .container-sexta-secao p{
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 800px) and (orientation: landscape){     
+    .container-sexta-secao .inside-sexta-secao{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .container-sexta-secao h2{
+        max-width: 100%;
+        color: white;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 25px;
+        text-align: center;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+        margin-left: 1.5em;
+    }
+    
+    .container-sexta-secao .titulo-rede{
+        max-width: 100%;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0em;
+        margin-bottom: .5em;
+    }
+    
+    .container-sexta-secao .titulo-rede img{
+        max-width: 30%;
+        margin-top: 2.5em;
+        margin-left: .5em;
+    }
+}

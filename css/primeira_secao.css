@@ -2,8 +2,8 @@
 
 .primeira-secao{
     max-width: 100%;
-    min-height: 80vh;
-    background: url("../img/background_primeira_secao.jpg");
+    min-height: 85vh;
+    background: url("../img/primeira_secao/background.jpg");
     background-repeat: no-repeat;
     background-position: 0 65%;
     background-size: cover;
@@ -53,6 +53,7 @@
         font-weight: normal;
         font-size: 18px;
         margin-bottom: 2em;
+        display: none;
     }
 }
 

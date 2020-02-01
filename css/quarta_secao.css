@@ -2,15 +2,12 @@
 
 .quarta-secao{
     max-width: 100%;
-    margin: auto;
+    background: rgba(160,160,160,.1);
+    box-shadow: 1px 1px 5px 1px rgba(120,120,120,1);
 }
 
 .container-quarta-secao{
     max-width: 100%;
-    background: url("../img/background_quarta_secao.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 75vh;
     padding: 1.5em;
     display: flex;
     flex-wrap: wrap;
@@ -41,25 +38,46 @@
     .container-quarta-secao{
         max-width: 100%;
         min-height: 100%;
-        background: url("../img/background_quarta_secao.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 0 50%;
     }
 }
 
 /* Desktop Version */
 
 @media(orientation: landscape){
+    .container-quarta-secao{
+        max-height: 25em;
+    }
+    
     .container-quarta-secao .widget-sympla{
         max-width: 100%;
         margin-top: 1em;
         margin-bottom: 5em;
-        padding-top: 5em;
+        padding-top: 0em;
         padding-bottom: 5em;
     }
     
     .container-quarta-secao .inner-sympla{
-        width: 100em;
+        width: 50em;
+    }
+}
+
+
+/* Other Rules */
+
+@media(max-width: 1200px) and (orientation: landscape){
+    .container-quarta-secao .inner-sympla{
+        width: 25em;
+    }
+}
+
+@media(max-width: 800px) and (orientation: landscape){
+    .container-quarta-secao .inner-sympla{
+        width: 20em;
+    }
+}
+
+@media(max-width: 400px) and (orientation: landscape){
+    .container-quarta-secao .inner-sympla{
+        width: 20em;
     }
 }

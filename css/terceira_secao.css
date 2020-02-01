@@ -2,12 +2,20 @@
 
 .terceira-secao{
     max-width: 100%;
+    min-height: 50vh;
+    margin: auto;
+}
+
+.terceira-secao .iframe-div{
+    max-width: 100%;
     margin: auto;
 }
 
 .container-terceira-secao{
     max-width: 100%;
-    min-height: 25vh;
+    background-image: url(../img/terceira_secao/background_fill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 0em;
     display: flex;
     flex-wrap: wrap;
@@ -15,11 +23,12 @@
     align-items: center;
     box-sizing: border-box;
     margin: auto;
+    box-shadow: -5px -10px 10px -10px midnightblue;
 }
 
 @media(orientation: landscape){
     .container-terceira-secao{
-        max-width: 60%;
+        max-width: 100%;
     }
 }
 
@@ -29,60 +38,54 @@
 @media(orientation: portrait){
     .container-terceira-secao h2{
         width: 100%;
-        color: #294DC2;
+        color: white;
         font-family: "Roboto";
         font-weight: bold;
         font-size: 35px;
         line-height: 20px;
         text-align: center;
         padding: .5em;
-        margin-top: 1em;
+        margin-top: .5em;
     }
     
     .container-terceira-secao h3{
         width: 100%;
-        color: #737373;
+        color: white;
         font-family: "Roboto";
         font-style: normal;
         font-size: 25px;
         line-height: 25px;
         text-align: center;
         padding: .3em;
-        margin-bottom: .2em;
+        margin-bottom: .5em;
     }
 }
 
 /* Desktop Version */
 
-@media(orientation: landscape){
-    .container-terceira-secao h1{
-        color: #737373;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    
+@media(orientation: landscape){ 
     .container-terceira-secao h2{
         width: 100%;
-        color: #294DC2;
+        color: white;
         font-family: "Roboto";
         font-weight: bold;
         font-size: 35px;
         line-height: 20px;
         text-align: center;
         padding: .5em;
-        margin-top: 1em;
+        margin-top: .5em;
     }
     
     .container-terceira-secao h3{
         width: 100%;
-        color: #737373;
+        color: white;
         font-family: "Roboto";
         font-style: normal;
         font-size: 25px;
         line-height: 25px;
         text-align: center;
         padding: .3em;
-        margin-bottom: .2em;
+        margin-bottom: .5em;
     }
 }
 

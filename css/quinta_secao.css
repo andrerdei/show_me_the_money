@@ -2,13 +2,15 @@
 
 .quinta-secao{
     max-width: 100%;
+    max-width: 100%;
+    margin: auto;
     margin: auto;
 }
 
 .container-quinta-secao{
     max-width: 100%;
-    min-height: 40vh;
-    padding: 1.5em;
+    min-height: 46.5vh;
+    padding: 4em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -38,19 +40,22 @@
         align-items: center;
     }
     
-    .container-quinta-secao h2{
-        width: 50%;
+    .quinta-secao h2{
+        width: 100%;
+        background-color: rgba(220,220,220,.3);
+        border-radius: 40px;
         color: #294DC2;
         font-family: "Roboto";
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 24px;
+        line-height: 25px;
         text-align: center;
-        padding: .3em;
+        padding: 1em;
+        margin: auto;
     }
     
-    .container-quinta-secao figure{
+    .container-quinta-secao picture{
         max-width: 55%;
         text-align: center;
         align-items: center;
@@ -59,7 +64,7 @@
     }
     
     .container-quinta-secao img{
-        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -75,8 +80,10 @@
         align-items: center;
     }
     
-    .container-quinta-secao h2{
+    .quinta-secao h2{
         width: 100%;
+        background-color: rgba(220,220,220,.3);
+        border-radius: 40px;
         color: #294DC2;
         font-family: "Roboto";
         font-style: normal;
@@ -84,11 +91,13 @@
         font-size: 35px;
         line-height: 40px;
         text-align: center;
-        padding: .3em;
+        padding: 1em;
+        margin: auto;
+        margin-bottom: 2em;
     }
     
-    .container-quinta-secao figure{
-        max-width: 25%;
+    .container-quinta-secao picture{
+        max-width: 55%;
         text-align: center;
         margin: 2em;
         margin-top: .8em;
@@ -99,16 +108,11 @@
     }
 }
 
-@media(max-width: 1200px){
-    .container-quinta-secao figure{
-        max-width: 55%;
-        text-align: center;
-        align-items: center;
-        margin-top: .8em;
-        margin-bottom: 1.2em;
-    }
-    
-    .container-quinta-secao img{
-        width: 100%;
+
+/* Other Rules */
+
+@media(max-width: 1260px){     
+    .container-quinta-secao h2{
+        font-size: 24px;
     }
 }
